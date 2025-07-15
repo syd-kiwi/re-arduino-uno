@@ -16,15 +16,13 @@ This repository provides a beginner-friendly walkthrough of how to reverse engin
 ## Project Structure
 
 re-arduino-uno/
-├── Arduino-test.c # Sample C firmware for Arduino
-├── Arduino-test.ino # Arduino IDE sketch
-├── reverse-engineering-arduino-uno.rep # Ghidra project session file
-├── reverse-engineering-ghidra.gpr # Ghidra project metadata
-├── Datasheets/ # Reference PDFs for hardware components
-├── Presentation/ # Slide deck used for walkthrough/tutorial
-├── README.md # Project overview and instructions
-
-
+  * Arduino-test.c # Sample C firmware for Arduino
+  * Arduino-test.ino # Arduino IDE sketch
+  * reverse-engineering-arduino-uno.rep # Ghidra project session file
+  * reverse-engineering-ghidra.gpr # Ghidra project metadata
+  * Datasheets/ # Reference PDFs for hardware components
+  * Presentation/ # Slide deck used for walkthrough/tutorial
+  * README.md # Project overview and instructions
 
 ## Requirements
 
