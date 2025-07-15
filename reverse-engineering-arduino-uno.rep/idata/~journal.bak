@@ -1,0 +1,11 @@
+IADD:00000000:/Arduino-test.ino
+IDSET:/Arduino-test.ino:c0a8381dd7478582373807500
+IADD:00000001:/Arduino-test.c
+IDSET:/Arduino-test.c:c0a8381dd9378667734850600
+IADD:00000002:/Arduino-test(2).c
+IDSET:/Arduino-test(2).c:c0a8381ddc078866411051600
+IDEL:/Arduino-test.c
+IDEL:/Arduino-test.ino
+IDEL:/Arduino-test(2).c
+IADD:00000003:/Arduino-test.c
+IDSET:/Arduino-test.c:c0a8381ddc978972095540100
