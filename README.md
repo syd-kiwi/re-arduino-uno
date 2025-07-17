@@ -32,7 +32,7 @@ re-arduino-uno/
 
 ### Hardware
 - Arduino Uno (ATmega328P)
-- USB A-to-B cable
+- USB A-to-C cable
 
 
 ### Flash the Firmware
