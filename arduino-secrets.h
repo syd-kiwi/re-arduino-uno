@@ -1,4 +1,4 @@
-// arduino_secrets.h
+// arduino-secrets.h
 #ifndef ARDUINO_SECRETS_H
 #define ARDUINO_SECRETS_H
 
