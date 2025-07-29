@@ -1,5 +1,3 @@
-#include "arduino_secrets.h"
-
 int blinkCount = 0;
 bool ready = false;
 
