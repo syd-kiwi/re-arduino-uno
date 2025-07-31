@@ -15,9 +15,6 @@ This repository provides a beginner-friendly walkthrough of how to reverse engin
 
 ## Project Structure
 
-re-arduino-uno/
-## 📁 Project Structure
-
 | File/Folder              | Description                                                |
 |--------------------------|------------------------------------------------------------|
 | `Datasheets/`            | Reference documents (e.g., ATmega328P datasheet)           |
