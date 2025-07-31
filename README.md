@@ -26,13 +26,13 @@ re-arduino-uno/
 
 ## Requirements
 
-- [Ghidra 10+](https://ghidra-sre.org/)
-- [Arduino IDE](https://www.arduino.cc/en/software)
-- Java 17+ (required for Ghidra)
+- [Ghidra 11](https://github.com/NationalSecurityAgency/ghidra/releases)
+- [Arduino IDE Cloud Website](https://app.arduino.cc/)
+- [Device Driver](https://cloud.arduino.cc/download-agent)
 
 ### Hardware
 - Arduino Uno (ATmega328P)
-- USB A-to-C cable
+- USB-A to USB-B cable
 
 
 ### Flash the Firmware
