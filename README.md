@@ -59,11 +59,7 @@ This repository provides a beginner-friendly walkthrough of how to reverse engin
    Click the **Upload** button (right-facing arrow).  
    Your Arduino should run the sketch and control the onboard LED.
 
----
-
 ### Analyzing in Ghidra
-
-#### Use Provided ELF File
 
 1. **Open Ghidra** and create a new project.
 2. Import `Give_me_the_Addy/firmware.elf`.
