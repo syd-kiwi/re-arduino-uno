@@ -27,9 +27,6 @@ re-arduino-uno/
 | `Give_me_the_Addy.ino`   | Stores values and adds integers/hex                        |
 | `Keep_it_Lit.ino`        | Keeps LED on and performs math operations                  |
 | `secretheader.h`         | Header file simulating a secrets store                     |
-| `README.md`              | This file – project overview and instructions              |
-
-
 
 ## Requirements
 
