@@ -16,13 +16,15 @@ This repository provides a beginner-friendly walkthrough of how to reverse engin
 ## Project Structure
 
 re-arduino-uno/
-  * Arduino-test.c # Sample C firmware for Arduino
-  * Arduino-test.ino # Arduino IDE sketch
-  * reverse-engineering-arduino-uno.rep # Ghidra project session file
-  * reverse-engineering-ghidra.gpr # Ghidra project metadata
-  * Datasheets/ # Reference PDFs for hardware components
-  * Presentation/ # Slide deck used for walkthrough/tutorial
-  * README.md # Project overview and instructions
+📁 Datasheets/             → Reference documents (e.g. ATmega328P datasheet)
+📁 Give_me_the_Addy/       → Ghidra project + ELF file for reverse engineering
+📁 Presentation/           → Slides for talk/workshop (currently removed)
+🔘 Blink_of_an_Eye.ino     → Blinks LED repeatedly
+🔘 Give_me_the_Addy.ino    → Stores values and adds ints/hex
+🔘 Keep_it_Lit.ino         → Keeps LED on and does math ops
+🔐 secretheader.h          → Header file simulating a secrets store
+📄 README.md               → You're here!
+
 
 ## Requirements
 
