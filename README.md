@@ -35,11 +35,42 @@ This repository provides a beginner-friendly walkthrough of how to reverse engin
 - Arduino Uno (ATmega328P)
 - USB-A to USB-B cable
 
+## Usage Instructions
 
-### Flash the Firmware
-You can flash either `Arduino-test.c` or `Arduino-test.ino` using the Arduino IDE
+### Flashing Arduino Firmware
 
-For `.ino`:
-- Open the sketch in Arduino IDE
-- Select the correct board and port
-- Upload!
+1. **Open Arduino IDE**  
+   Download it from [arduino.cc](https://www.arduino.cc/en/software).
+
+2. **Connect Your Arduino Uno**  
+   Plug in your board via USB.
+
+3. **Choose a Sketch**  
+   Open one of the following files from this repo:
+   - `Blink_of_an_Eye.ino`
+   - `Give_me_the_Addy.ino`
+   - `Keep_it_Lit.ino`
+
+4. **Select Your Board and Port**
+   - `Tools > Board > Arduino Uno`
+   - `Tools > Port` → Select the correct COM port
+
+5. **Upload the Code**  
+   Click the **Upload** button (right-facing arrow).  
+   Your Arduino should run the sketch and control the onboard LED.
+
+---
+
+### Analyzing in Ghidra
+
+#### Use Provided ELF File
+
+1. **Open Ghidra** and create a new project.
+2. Import `Give_me_the_Addy/firmware.elf`.
+3. When prompted:
+   - Select `Processor: AVR`
+   - Variant: `atmega328`
+4. Run **Auto-Analysis**.
+5. Explore the disassembly and decompiled views:
+   - Navigate to `main()` or inspect memory-mapped I/O (e.g., `PORTB`, `DDRB`).
+
