@@ -19,7 +19,8 @@ This repository provides a beginner-friendly walkthrough of how to reverse engin
 |--------------------------|------------------------------------------------------------|
 | `Datasheets/`            | Reference documents (e.g., ATmega328P datasheet)           |
 | `Give_me_the_Addy/`      | Ghidra project and ELF file for reverse engineering        |
-| `Presentation/`          | Slides for talk/workshop *(currently removed)*             |
+| `Presentation/`          | Slides for talk/workshop                                   |
+| `assembly-executable/'    | Example C code, assembly and executable files              |
 | `Blink_of_an_Eye.ino`    | Blinks the onboard LED repeatedly                          |
 | `Give_me_the_Addy.ino`   | Stores values and adds integers/hex                        |
 | `Keep_it_Lit.ino`        | Keeps LED on and performs math operations                  |
