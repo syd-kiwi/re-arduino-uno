@@ -23,7 +23,7 @@ void loop() {
   Serial.println(hex_sum);
   Serial.println(credentials);
 
-  delay(60000);  // Wait for 60,000 milliseconds = 1 minute
+  delay(30000);  // Wait for 30,000 milliseconds = 0.5 minute
 
 
 }
