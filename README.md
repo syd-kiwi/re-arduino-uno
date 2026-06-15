@@ -22,6 +22,7 @@ This repository provides a beginner-friendly walkthrough of how to reverse engin
 | `Presentation/`          | Slides for talk/workshop                                   |
 | `assembly-executable/`   | Example C code, assembly and executable files              |
 | `Blink_of_an_Eye.ino`    | Blinks the onboard LED repeatedly                          |
+| `Blink_Project.ino`      | Multi-stage blink show (ramp, heartbeat, countdown)       |
 | `Give_me_the_Addy.ino`   | Stores values and adds integers/hex                        |
 | `Keep_it_Lit.ino`        | Keeps LED on and performs math operations                  |
 | `secretheader.h`         | Header file simulating a secrets store                     |
@@ -49,6 +50,7 @@ This repository provides a beginner-friendly walkthrough of how to reverse engin
 3. **Choose a Sketch**  
    Open one of the following files from this repo:
    - `Blink_of_an_Eye.ino`
+   - `Blink_Project.ino`
    - `Give_me_the_Addy.ino`
    - `Keep_it_Lit.ino`
 
@@ -70,4 +72,3 @@ This repository provides a beginner-friendly walkthrough of how to reverse engin
 4. Run **Auto-Analysis**.
 5. Explore the disassembly and decompiled views:
    - Navigate to `main()` or inspect memory-mapped I/O (e.g., `PORTB`, `DDRB`).
-
