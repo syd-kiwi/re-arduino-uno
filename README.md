@@ -6,8 +6,6 @@ ChronoRoot connects beginner-friendly reverse engineering foundations with deepe
 
 In the cyberpunk underground, trust is the most valuable exploit. ChronoRoot explores how attackers can abuse legitimately signed but vulnerable drivers to cross kernel trust boundaries, perform unsafe memory operations, escalate privileges, or bypass security controls.
 
-The DeLorean may be fictional—but kernel trust abuse is very real.
-
 ---
 
 ## Presentation Overview
