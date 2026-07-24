@@ -1,4 +1,4 @@
-# ChronoRoot Presentation: Reverse Engineering Arduino Uno with Ghidra
+# ChronoRoot Presentation: Reverse Engineering
 
 Welcome to the **ChronoRoot** reverse engineering presentation repo.  
 This project supports a beginner-friendly walkthrough of how to reverse engineer C code running on an Arduino Uno using [Ghidra](https://ghidra-sre.org/). It includes presentation slides, sample Arduino firmware, hardware references, and a guided analysis flow that can be used during the talk or for self-paced practice afterward.
