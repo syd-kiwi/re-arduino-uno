@@ -1,31 +1,33 @@
-# Reverse Engineering Arduino Uno with Ghidra
+# ChronoRoot Presentation: Reverse Engineering Arduino Uno with Ghidra
 
-Welcome to the **RE Arduino Uno** project!  
-This repository provides a beginner-friendly walkthrough of how to reverse engineer C code running on an Arduino Uno using [Ghidra](https://ghidra-sre.org/). It includes sample firmware, hardware setup instructions, and a Ghidra analysis flow suitable for workshops or self-paced learning.
+Welcome to the **ChronoRoot** reverse engineering presentation repo.  
+This project supports a beginner-friendly walkthrough of how to reverse engineer C code running on an Arduino Uno using [Ghidra](https://ghidra-sre.org/). It includes presentation slides, sample Arduino firmware, hardware references, and a guided analysis flow that can be used during the talk or for self-paced practice afterward.
 
 ---
 
-## What You'll Learn
+## Presentation Goals
 
 - How to compile and flash C programs to an Arduino Uno
 - How to extract and analyze firmware binaries
 - How to identify key functions and memory layout in disassembled code
+- How small source-level choices appear in compiled AVR output
 
 ---
 
 ## Project Structure
 
-| File/Folder              | Description                                                |
-|--------------------------|------------------------------------------------------------|
-| `Datasheets/`            | Reference documents (e.g., ATmega328P datasheet)           |
-| `Give_me_the_Addy/`      | Ghidra project and ELF file for reverse engineering        |
-| `Presentation/`          | Slides for talk/workshop                                   |
-| `assembly-executable/`   | Example C code, assembly and executable files              |
-| `Blink_of_an_Eye.ino`    | Blinks the onboard LED repeatedly                          |
-| `Blink_Project.ino`      | Multi-stage blink show (ramp, heartbeat, countdown)       |
-| `Give_me_the_Addy.ino`   | Stores values and adds integers/hex                        |
-| `Keep_it_Lit.ino`        | Keeps LED on and performs math operations                  |
-| `secretheader.h`         | Header file simulating a secrets store                     |
+| File/Folder                                      | Description                                                |
+|--------------------------------------------------|------------------------------------------------------------|
+| `Datasheets/`                                    | Reference documents for the Arduino Uno components         |
+| `Presentation/Reverse Engineering Slides.pptx`   | Slide deck for the ChronoRoot presentation                  |
+| `on-your-own-projects/`                          | Arduino sketches, native examples, and Ghidra project data |
+| `on-your-own-projects/Blink_of_an_Eye.ino`       | Blinks the onboard LED for 30 seconds                      |
+| `on-your-own-projects/Blink_Project.ino`         | Multi-stage blink show with ramp, heartbeat, and countdown |
+| `on-your-own-projects/Give_me_the_Addy.ino`      | Adds decimal and hex values, then prints mock credentials  |
+| `on-your-own-projects/Keep_it_Lit.ino`           | Reads a blink count from Serial and flashes the LED        |
+| `on-your-own-projects/secretheader.h`            | Header file simulating a secrets store                     |
+| `on-your-own-projects/assembly-executable/`      | Example C code, assembly, object, and executable files     |
+| `on-your-own-projects/Give_me_the_Addy/`         | Ghidra project and ELF file for reverse engineering        |
 
 ## Requirements
 
@@ -36,6 +38,13 @@ This repository provides a beginner-friendly walkthrough of how to reverse engin
 ### Hardware
 - Arduino Uno (ATmega328P)
 - USB-A to USB-B cable
+
+## Presentation Flow
+
+1. Start with `Presentation/Reverse Engineering Slides.pptx` for the talk track.
+2. Flash one or more sketches from `on-your-own-projects/` to the Arduino Uno.
+3. Open the compiled ELF in Ghidra and run auto-analysis.
+4. Compare the source sketches to the disassembly and decompiled views.
 
 ## Usage Instructions
 
@@ -48,7 +57,7 @@ This repository provides a beginner-friendly walkthrough of how to reverse engin
    Plug in your board via USB.
 
 3. **Choose a Sketch**  
-   Open one of the following files from this repo:
+   Open one of the following files from `on-your-own-projects/`:
    - `Blink_of_an_Eye.ino`
    - `Blink_Project.ino`
    - `Give_me_the_Addy.ino`
@@ -65,7 +74,7 @@ This repository provides a beginner-friendly walkthrough of how to reverse engin
 ### Analyzing in Ghidra
 
 1. **Open Ghidra** and create a new project.
-2. Import `Give_me_the_Addy/firmware.elf`.
+2. Import `on-your-own-projects/Give_me_the_Addy/Give_me_the_Addy.ino.elf`.
 3. When prompted:
    - Select `Processor: AVR`
    - Variant: `atmega328`
