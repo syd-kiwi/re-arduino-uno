@@ -16,7 +16,7 @@ The updated **ChronoRoot: Time-Traveling Through Kernel Trust Boundaries** prese
 
 ### Slides
 
-- **[Current ChronoRoot Presentation – Time-Traveling Through Kernel Trust Boundaries](https://github.com/syd-kiwi/chrono-root/blob/main/Presentation/ChronoRoot%20%20Time-Traveling%20Through%20Kernel%20Trust%20Boundaries%20%281%29.pptx.zip)**
+- **[Current ChronoRoot Presentation – Time-Traveling Through Kernel Trust Boundaries](https://github.com/syd-kiwi/chrono-root/blob/main/Presentation/ChronoRoot.pptx.zip)**
 - **[Original Reverse Engineering Slides](https://github.com/syd-kiwi/chrono-root/blob/main/Presentation/Reverse%20Engineering%20Slides.pptx)**
 
 Topics include:
