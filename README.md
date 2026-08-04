@@ -2,7 +2,7 @@
 
 Welcome to the **ChronoRoot** presentation and lab repository.
 
-ChronoRoot connects beginner-friendly reverse engineering foundations with deeper Windows kernel security concepts. The original material introduces reverse engineering through Arduino firmware, C code, memory, registers, hardware I/O, and Ghidra. The new presentation builds on those same skills to examine Windows drivers, IOCTL interfaces, kernel trust boundaries, and Bring Your Own Vulnerable Driver (BYOVD) techniques.
+ChronoRoot connects beginner-friendly reverse engineering foundations with deeper Windows kernel security concepts. The original material introduces reverse engineering through Arduino firmware, C code, memory, registers, hardware I/O, and Ghidra. The updated presentation builds on those same skills to examine Windows drivers, IOCTL interfaces, kernel trust boundaries, and Bring Your Own Vulnerable Driver (BYOVD) techniques.
 
 In the cyberpunk underground, trust is the most valuable exploit. ChronoRoot explores how attackers can abuse legitimately signed but vulnerable drivers to cross kernel trust boundaries, perform unsafe memory operations, escalate privileges, or bypass security controls.
 
@@ -10,9 +10,14 @@ In the cyberpunk underground, trust is the most valuable exploit. ChronoRoot exp
 
 ## Presentation Overview
 
-Last year, this project focused on making reverse engineering approachable through Arduino firmware and Ghidra. Attendees learned how source code becomes machine instructions and how to inspect compiled programs through disassembly, decompilation, registers, memory, and hardware interaction.
+The original ChronoRoot material focused on making reverse engineering approachable through Arduino firmware and Ghidra. Attendees learned how source code becomes machine instructions and how to inspect compiled programs through disassembly, decompilation, registers, memory, and hardware interaction.
 
-This year, ChronoRoot takes those same foundational concepts deeper into the Windows kernel. The presentation will explore how vulnerable signed drivers expose dangerous functionality through IOCTL interfaces and how reverse engineering can reveal weaknesses in trusted kernel components.
+The updated **ChronoRoot: Time-Traveling Through Kernel Trust Boundaries** presentation takes those same foundational concepts deeper into the Windows kernel. It explores how vulnerable signed drivers expose dangerous functionality through IOCTL interfaces and how reverse engineering can reveal weaknesses in trusted kernel components.
+
+### Slides
+
+- **[Current ChronoRoot Presentation – Time-Traveling Through Kernel Trust Boundaries](https://github.com/syd-kiwi/chrono-root/blob/main/Presentation/ChronoRoot%20%20Time-Traveling%20Through%20Kernel%20Trust%20Boundaries%20%281%29.pptx.zip)**
+- **[Original Reverse Engineering Slides](https://github.com/syd-kiwi/chrono-root/blob/main/Presentation/Reverse%20Engineering%20Slides.pptx)**
 
 Topics include:
 
@@ -34,6 +39,8 @@ Topics include:
 | File/Folder | Description |
 |---|---|
 | `Datasheets/` | Reference documents for Arduino Uno components |
+| [`Presentation/`](https://github.com/syd-kiwi/chrono-root/tree/main/Presentation) | Current ChronoRoot presentation and original reverse-engineering slide deck |
+| `Presentation/ChronoRoot  Time-Traveling Through Kernel Trust Boundaries (1).pptx.zip` | Updated ChronoRoot slide deck covering Windows kernel trust boundaries and BYOVD |
 | `Presentation/Reverse Engineering Slides.pptx` | Original beginner-friendly reverse-engineering slide deck |
 | [`on-your-own-projects/`](https://github.com/syd-kiwi/chrono-root/tree/main/on-your-own-projects) | Reverse-engineering foundations, Arduino exercises, assembly references, and Ghidra walkthroughs |
 | [`windows-kernel-lab/`](https://github.com/syd-kiwi/chrono-root/tree/main/windows-kernel-lab) | Windows kernel driver, BYOVD, and reverse-engineering lab materials |
@@ -89,4 +96,4 @@ The goal of this project is to understand how trust boundaries fail so defenders
 - **Arduino and Ghidra exercises:** Available
 - **Windows kernel lab:** In development
 - **BYOVD and IOCTL demonstrations:** Planned
-- **Updated ChronoRoot presentation:** In development
+- **Updated ChronoRoot presentation:** Available
