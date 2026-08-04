@@ -29,21 +29,6 @@ Topics include:
 
 ---
 
-## Learning Goals
-
-By working through the presentation and supporting materials, participants should be able to:
-
-- Explain how source code is represented in compiled binaries
-- Navigate disassembly and decompiled code in Ghidra
-- Identify important functions, strings, memory regions, and control flow
-- Understand how applications communicate with Windows drivers
-- Recognize the role of IOCTL handlers in driver attack surfaces
-- Describe how vulnerable signed drivers can undermine kernel trust
-- Connect beginner reverse-engineering techniques to real-world kernel security research
-- Conduct experiments safely in an isolated and authorized environment
-
----
-
 ## Repository Structure
 
 | File/Folder | Description |
