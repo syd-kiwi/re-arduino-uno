@@ -87,13 +87,3 @@ This repository is intended for education, authorized security research, and def
 Kernel experiments can crash or corrupt a system. Perform all Windows driver research inside an isolated virtual machine with snapshots, no sensitive information, and no access to production systems. Only analyze software and systems that you own or have explicit permission to test.
 
 The goal of this project is to understand how trust boundaries fail so defenders, researchers, and developers can identify and reduce those risks.
-
----
-
-## Project Status
-
-- **Reverse-engineering foundations:** Available
-- **Arduino and Ghidra exercises:** Available
-- **Windows kernel lab:** In development
-- **BYOVD and IOCTL demonstrations:** Planned
-- **Updated ChronoRoot presentation:** Available
