@@ -58,7 +58,10 @@ By working through the presentation and supporting materials, participants shoul
 | `on-your-own-projects/secretheader.h` | Header file simulating a secrets store |
 | `on-your-own-projects/assembly-executable/` | Example C code, assembly, object, and executable files |
 | `on-your-own-projects/Give_me_the_Addy/` | Ghidra project and ELF file for reverse engineering |
-| `windows-kernel-lab/` | Placeholder for upcoming Windows driver, IOCTL, BYOVD, and kernel-analysis materials |
+| [`windows-kernel-lab/`](https://github.com/syd-kiwi/chrono-root/tree/main/windows-kernel-lab) | Windows kernel driver, BYOVD, and reverse-engineering lab materials |
+| `windows-kernel-lab/DummyByovdDrv.sys` | Windows kernel driver binary used for the BYOVD lab |
+| `windows-kernel-lab/DummyByovdDrv.pdb` | Debug symbols for the dummy BYOVD driver |
+| `windows-kernel-lab/README.md` | Setup notes and documentation for the Windows kernel lab |
 
 ---
 
