@@ -50,110 +50,26 @@ By working through the presentation and supporting materials, participants shoul
 |---|---|
 | `Datasheets/` | Reference documents for Arduino Uno components |
 | `Presentation/Reverse Engineering Slides.pptx` | Original beginner-friendly reverse-engineering slide deck |
-| `on-your-own-projects/` | Arduino sketches, native examples, binaries, and Ghidra project data |
-| `on-your-own-projects/Blink_of_an_Eye.ino` | Blinks the onboard LED for 30 seconds |
-| `on-your-own-projects/Blink_Project.ino` | Multi-stage blink show with ramp, heartbeat, and countdown |
-| `on-your-own-projects/Give_me_the_Addy.ino` | Adds decimal and hexadecimal values, then prints mock credentials |
-| `on-your-own-projects/Keep_it_Lit.ino` | Reads a blink count from Serial and flashes the LED |
-| `on-your-own-projects/secretheader.h` | Header file simulating a secrets store |
-| `on-your-own-projects/assembly-executable/` | Example C code, assembly, object, and executable files |
-| `on-your-own-projects/Give_me_the_Addy/` | Ghidra project and ELF file for reverse engineering |
+| [`on-your-own-projects/`](https://github.com/syd-kiwi/chrono-root/tree/main/on-your-own-projects) | Reverse-engineering foundations, Arduino exercises, assembly references, and Ghidra walkthroughs |
 | [`windows-kernel-lab/`](https://github.com/syd-kiwi/chrono-root/tree/main/windows-kernel-lab) | Windows kernel driver, BYOVD, and reverse-engineering lab materials |
-| `windows-kernel-lab/DummyByovdDrv.sys` | Windows kernel driver binary used for the BYOVD lab |
-| `windows-kernel-lab/DummyByovdDrv.pdb` | Debug symbols for the dummy BYOVD driver |
-| `windows-kernel-lab/README.md` | Setup notes and documentation for the Windows kernel lab |
 
 ---
 
 ## Track 1: Reverse Engineering Foundations
 
-The original hands-on material uses an Arduino Uno to make reverse engineering visible and approachable.
+The beginner track uses Arduino firmware and Ghidra to make reverse engineering visible and approachable. It covers source code, assembly, registers, memory, control flow, firmware flashing, and ELF analysis.
 
-### Assembly Instruction Quick Reference
+For the full lab instructions, assembly cheat sheet, register reference, project files, and Ghidra walkthrough, see:
 
-| Instruction | Meaning |
-|---|---|
-| `MOV` | Move/copy data |
-| `LEA` | Load effective address |
-| `PUSH` | Place a value on the stack |
-| `POP` | Remove a value from the stack |
-| `CALL` | Call a function |
-| `RET` | Return from a function; commonly marks the end of a function |
-| `JMP` | Unconditional jump |
-| `JE` / `JZ` | Jump if equal / zero |
-| `JNE` / `JNZ` | Jump if not equal / not zero |
-| `JA` | Jump if above |
-| `JB` | Jump if below |
-| `JG` | Jump if greater (signed) |
-| `JL` | Jump if less (signed) |
-| `CMP` | Compare two values |
-| `SYSCALL` | System transition call |
-| `IMUL` | Integer multiplication |
-
-### x86-64 Register Quick Reference
-
-| Register | Common Role |
-|---|---|
-| `RAX` | Return values and temporary calculations |
-| `RBX` | Nonvolatile general-purpose register |
-| `RCX` | 1st function argument in the Windows x64 calling convention |
-| `RDX` | 2nd function argument in the Windows x64 calling convention |
-| `RSP` | Stack pointer |
-| `RBP` | Commonly used as a stack-frame/base pointer |
-| `RSI` | Nonvolatile general-purpose register |
-| `RDI` | Nonvolatile general-purpose register |
-| `RIP` | Instruction pointer |
-
-### Requirements
-
-- [Ghidra 11](https://github.com/NationalSecurityAgency/ghidra/releases)
-- [Arduino IDE](https://www.arduino.cc/en/software) or [Arduino Cloud Editor](https://app.arduino.cc/)
-- [Arduino Cloud Agent](https://cloud.arduino.cc/download-agent), when using the cloud editor
-
-### Hardware
-
-- Arduino Uno with an ATmega328P microcontroller
-- USB-A to USB-B cable
-
-### Suggested Lab Flow
-
-1. Open `Presentation/Reverse Engineering Slides.pptx` for the original talk track.
-2. Flash one or more sketches from `on-your-own-projects/` to the Arduino Uno.
-3. Import the compiled ELF file into Ghidra.
-4. Run auto-analysis using the AVR processor configuration.
-5. Compare the source code with the disassembly and decompiled output.
-6. Inspect functions, memory-mapped I/O, registers, strings, and control flow.
-
-### Flashing Arduino Firmware
-
-1. Open the Arduino IDE or Arduino Cloud Editor.
-2. Connect the Arduino Uno through USB.
-3. Open one of the following sketches:
-   - `Blink_of_an_Eye.ino`
-   - `Blink_Project.ino`
-   - `Give_me_the_Addy.ino`
-   - `Keep_it_Lit.ino`
-4. Select **Arduino Uno** as the board.
-5. Select the correct port.
-6. Upload the sketch and observe its behavior.
-
-### Analyzing the ELF in Ghidra
-
-1. Open Ghidra and create a new project.
-2. Import `on-your-own-projects/Give_me_the_Addy/Give_me_the_Addy.ino.elf`.
-3. Select the AVR processor language and the ATmega328 variant when prompted.
-4. Run auto-analysis.
-5. Navigate to `main()` and other relevant functions.
-6. Compare the decompiled output with the original sketch.
-7. Inspect memory-mapped I/O such as `PORTB` and `DDRB`.
+**[Reverse Engineering Foundations → `on-your-own-projects/`](https://github.com/syd-kiwi/chrono-root/tree/main/on-your-own-projects)**
 
 ---
 
 ## Track 2: Windows Kernel Trust Boundaries
 
-The upcoming `windows-kernel-lab/` materials will extend the reverse-engineering workflow into Windows driver analysis.
+The `windows-kernel-lab/` materials extend the reverse-engineering workflow into Windows driver analysis.
 
-Planned content includes:
+Planned and developing content includes:
 
 - Windows driver reverse-engineering examples
 - Driver loading and architecture notes
@@ -166,7 +82,9 @@ Planned content includes:
 - Detection, mitigation, and responsible disclosure notes
 - Presentation demonstrations and supporting files
 
-The folder currently contains a placeholder README and will be expanded as the presentation develops.
+See the lab folder here:
+
+**[Windows Kernel Lab → `windows-kernel-lab/`](https://github.com/syd-kiwi/chrono-root/tree/main/windows-kernel-lab)**
 
 ---
 
